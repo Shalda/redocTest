@@ -1,21 +1,21 @@
 <div class="docs_container">
-<rapi-doc
-  spec-url="https://petstore.swagger.io/v2/swagger.json"
-  update-route="false"
-  theme = "dark"
-  style = "height:100vh; width:100%"
-  render-style="focused"
-  heading-text="BlackSwan technologies"
-  bg-color="#2a3843"
-  text-color="#acb4b7"
-  primary-color="#3b4b56"
-  regular-font="Harmonia Sans Pro Cyr,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol"
-  font-size="large"
-  show-info="true"
-  allow-spec-url-load="true"
-  allow-spec-file-load="true"
-  allow-server-selection="false"
->
-  <img class="docs_logo" slot="logo" src="https://yt3.ggpht.com/ytc/AKedOLR8eI1kQ5kknozvJ6sgEKtTEHJeE5_PybCd2iEW=s88-c-k-c0x00ffffff-no-rj"/>
-</rapi-doc>
+  <rapi-doc
+    [attr.spec-url]="specUrl"
+    update-route="false"
+    theme="dark"
+    style="height: 100vh; width: 100%"
+    [attr.render-style]="rStyle"
+    [attr.heading-text]="text"
+    bg-color="#2a3843"
+    text-color="#acb4b7"
+    primary-color="#3b4b56"
+    regular-font="Harmonia Sans Pro Cyr,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol"
+    font-size="large"
+    show-info="true"
+    allow-spec-url-load="true"
+    allow-server-selection="false"
+    show-components="true"
+  >
+    <img class="docs_logo" slot="logo" [src]="logoUrl" />
+  </rapi-doc>
 </div>
