@@ -10,18 +10,19 @@ export class AppComponent implements OnInit {
   public title = 'sw-rdc';
   public text = 'BlackSwan technologies';
   public specFile: string = 'assets/pet.json';
-  public specUrl: string =
-    'https://petstore.swagger.io/v2/swagger.json';
+
   public logoUrl: string = 'assets/bst.jpg';
   public rStyle: string = 'focused';
   constructor(public breakpointObserver: BreakpointObserver) {}
+  logTry(){
+    console.log(`logging...`)
+  }
   ngOnInit() {
     this.breakpointObserver
       .observe(['(max-width: 768px)'])
       .subscribe((state: BreakpointState) => {
         if (state.matches) {
           this.rStyle = 'read';
-          console.log('small display');
         } else {
           this.rStyle = 'focused';
         }

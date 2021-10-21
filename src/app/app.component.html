@@ -1,21 +1,24 @@
 <div class="docs_container">
   <rapi-doc
-    [attr.spec-url]="specUrl"
-    update-route="false"
-    theme="dark"
     style="height: 100vh; width: 100%"
+    [attr.spec-url]="specFile"
     [attr.render-style]="rStyle"
     [attr.heading-text]="text"
-    bg-color="#2a3843"
-    text-color="#acb4b7"
     primary-color="#3b4b56"
-    regular-font="Harmonia Sans Pro Cyr,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol"
+    bg-color="#2a3843"
+    update-route="false"
+    theme="dark"
+    text-color="#acb4b7"
+    regular-font="Harmonia Sans Pro Cyr,sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol"
     font-size="large"
     show-info="true"
-    allow-spec-url-load="true"
-    allow-server-selection="false"
+    allow-spec-url-load="false"
+    allow-server-selection="true"
     show-components="true"
+    (before-try)="logTry()"
   >
     <img class="docs_logo" slot="logo" [src]="logoUrl" />
+<!--    <div style="color:orange" slot="nav-logo">Menu Text</div>-->
+<!--    <div style="color:red">Default text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, unde?</div>-->
   </rapi-doc>
 </div>

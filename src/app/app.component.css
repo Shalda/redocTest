@@ -5,3 +5,22 @@
   position: relative;
   bottom: 8px;
 }
+
+
+/*rapi-doc::part(section-navbar) { !* <<< targets navigation bar *!*/
+/*  background: linear-gradient(90deg, #3d4e70, #2e3746);*/
+/*  color: salmon;*/
+/*}*/
+
+
+/*rapi-doc::part(btn-search) {*/
+/*  background-color: orangered;*/
+/*  border-radius: 5px;*/
+/*}*/
+
+/*rapi-doc::part(section-main-content){*/
+/*  background-color: #0d4107;*/
+/*  padding: 20px;*/
+/*  color: #ffff;*/
+/*}*/
+
